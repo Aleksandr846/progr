@@ -1,11 +1,11 @@
-﻿using lb6;
+﻿using lb7;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lb6
+namespace lb7
 {
     internal class Walls
     {

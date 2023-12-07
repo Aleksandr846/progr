@@ -1,12 +1,13 @@
-﻿using lb6;
+﻿using lb7;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
-namespace lb6
+namespace lb7
 {
     class Point
     {
@@ -36,6 +37,30 @@ namespace lb6
         public bool IsHit(Point p)
         {
             return p.x == this.x && p.y == this.y;
+        }
+        public void Move(int offset, Direction direction)
+        {
+            if (direction == Direction.RIGHT)
+            {
+                x = x + offset;
+            }
+            else if (direction == Direction.LEFT)
+            {
+                x = x - offset;
+            }
+            else if (direction == Direction.UP)
+            {
+                y = y - offset;
+            }
+            else if (direction == Direction.DOWN)
+            {
+                y = y + offset;
+            }
+        }
+        public void Clear()
+        {
+            sym1 = ' ';
+            Draw();
         }
     }
     class Figure
@@ -95,50 +120,66 @@ namespace lb6
             }
         }
     }
+    enum Direction
+    {
+        LEFT,
+        RIGHT,
+        UP,
+        DOWN
+    }
+    class Snake : Figure
+    {
+        Direction direction;
 
+        public Snake(Point tail, int length, Direction _direction)
+        {
+            direction = _direction;
+            pList = new List<Point>();
+            for (int i = 0; i < length; i++)
+            {
+                Point p = new Point(tail);
+                p.Move(i, direction);
+                pList.Add(p);
+            }
+        }
+        public void Move()
+        {
+            Point tail = pList.First();
+            pList.Remove(tail);
+            Point head = GetNextPoint();
+            pList.Add(head);
+            tail.Clear();
+            head.Draw();
+        }
+        private Point GetNextPoint()
+        {
+            Point head = pList.Last();
+            Point nextPoint = new Point(head);
+            nextPoint.Move(1, direction);
+            return nextPoint;
+        }
+    }
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("\n\n+ Точки – 1 Линии - 2");
             Walls walls = new Walls(121, 30);
             walls.Draw();
-            int bruh = Convert.ToInt32(Console.ReadLine());
-            if (bruh == 1)
-            {
-                Point a = new Point(3, 3, '*');
-                a.Draw();
-                Point b = new Point(3, 5, '*');
-                b.Draw();
-                bool z = a.IsHit(b);
-                if (z == true)
-                {
-                    Console.WriteLine("\n+ Точки совпадают");
-                }
-                else
-                {
-                    Console.WriteLine("\n+ Точки не совпадают");
-                }
+            Point p = new Point(4, 5, '*');
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+            snake.Draw();
 
-            }
-            else
+            while (true)
             {
-                HorizontalLine h1 = new HorizontalLine(1, 6, 3, '*');
-                h1.Draw();
-                VerticalLine v1 = new VerticalLine(1, 4, 8, '*');
-                v1.Draw();
-                bool x = h1.IsHit(v1);
-                if (x == true)
+                if (walls.IsHit(snake))
                 {
-                    Console.WriteLine("\n+ Линии пересекаются");
+                    Console.WriteLine("Вы проиграли");
+                    Console.ReadKey();
+                    break;
                 }
-                else
-                {
-                    Console.WriteLine("\n+ Линии не пересекаются");
-                }
+                snake.Move();
+                Thread.Sleep(100);
             }
-            Console.WriteLine("\n+ Нажмите любую клавишу, чтобы завершить про-грамму...");
-            Console.ReadKey();
         }
     }
 }
