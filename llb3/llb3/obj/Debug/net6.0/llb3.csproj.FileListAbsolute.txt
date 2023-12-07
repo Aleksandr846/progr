@@ -1,0 +1,15 @@
+C:\Users\Aleksandr\source\repos\llb3\llb3\bin\Debug\net6.0\llb3.exe
+C:\Users\Aleksandr\source\repos\llb3\llb3\bin\Debug\net6.0\llb3.deps.json
+C:\Users\Aleksandr\source\repos\llb3\llb3\bin\Debug\net6.0\llb3.runtimeconfig.json
+C:\Users\Aleksandr\source\repos\llb3\llb3\bin\Debug\net6.0\llb3.dll
+C:\Users\Aleksandr\source\repos\llb3\llb3\bin\Debug\net6.0\ref\llb3.dll
+C:\Users\Aleksandr\source\repos\llb3\llb3\bin\Debug\net6.0\llb3.pdb
+C:\Users\Aleksandr\source\repos\llb3\llb3\obj\Debug\net6.0\llb3.csproj.AssemblyReference.cache
+C:\Users\Aleksandr\source\repos\llb3\llb3\obj\Debug\net6.0\llb3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aleksandr\source\repos\llb3\llb3\obj\Debug\net6.0\llb3.AssemblyInfoInputs.cache
+C:\Users\Aleksandr\source\repos\llb3\llb3\obj\Debug\net6.0\llb3.AssemblyInfo.cs
+C:\Users\Aleksandr\source\repos\llb3\llb3\obj\Debug\net6.0\llb3.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandr\source\repos\llb3\llb3\obj\Debug\net6.0\llb3.dll
+C:\Users\Aleksandr\source\repos\llb3\llb3\obj\Debug\net6.0\ref\llb3.dll
+C:\Users\Aleksandr\source\repos\llb3\llb3\obj\Debug\net6.0\llb3.pdb
+C:\Users\Aleksandr\source\repos\llb3\llb3\obj\Debug\net6.0\llb3.genruntimeconfig.cache
