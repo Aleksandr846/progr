@@ -1,38 +1,35 @@
-﻿using lb7;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
-namespace lb7
+namespace lb88
 {
     class Point
     {
-        int x;
-        int y;
-        char sym1;
+        public int x;
+        public int y;
+        public char sym;
+
         public Point()
         {
         }
-        public Point(int x, int y, char sym1)
+        public Point(int x, int y, char sym)
         {
             this.x = x;
             this.y = y;
-            this.sym1 = sym1;
+            this.sym = sym;
         }
         public Point(Point p)
         {
             x = p.x;
             y = p.y;
-            sym1 = p.sym1;
+            sym = p.sym;
         }
         public void Draw()
         {
             Console.SetCursorPosition(x, y);
-            Console.Write(sym1);
+            Console.Write(sym);
         }
         public bool IsHit(Point p)
         {
@@ -59,7 +56,7 @@ namespace lb7
         }
         public void Clear()
         {
-            sym1 = ' ';
+            sym = ' ';
             Draw();
         }
     }
@@ -129,6 +126,7 @@ namespace lb7
     }
     class Snake : Figure
     {
+        public static byte gg = 0;
         Direction direction;
 
         public Snake(Point tail, int length, Direction _direction)
@@ -151,34 +149,104 @@ namespace lb7
             tail.Clear();
             head.Draw();
         }
-        private Point GetNextPoint()
+        public Point GetNextPoint()
         {
             Point head = pList.Last();
             Point nextPoint = new Point(head);
             nextPoint.Move(1, direction);
             return nextPoint;
         }
-    }
-    class Program
-    {
-        static void Main(string[] args)
+        public void HandleKey(ConsoleKey key)
         {
-            Walls walls = new Walls(121, 30);
-            walls.Draw();
-            Point p = new Point(4, 5, '*');
-            Snake snake = new Snake(p, 4, Direction.RIGHT);
-            snake.Draw();
-
-            while (true)
+            if (key == ConsoleKey.LeftArrow)
+                direction = Direction.LEFT;
+            else if (key == ConsoleKey.RightArrow)
+                direction = Direction.RIGHT;
+            else if (key == ConsoleKey.DownArrow)
+                direction = Direction.DOWN;
+            else if (key == ConsoleKey.UpArrow)
+                direction = Direction.UP;
+        }
+        public bool Eat(Point food)
+        {
+            Point head = GetNextPoint();
+            if (head.IsHit(food))
             {
-                if (walls.IsHit(snake))
+                food.sym = head.sym;
+                pList.Add(food);
+                return true;
+            }
+            else
+                return false;
+        }
+        public bool SnakeHit()
+        {
+            foreach (var p in pList)
+            {
+                Point head = GetNextPoint();
+                if (p.IsHit(head))
+                    return true;
+            }
+            return false;
+        }
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                Walls walls = new Walls(120, 30);
+                walls.Draw();
+
+
+                Point p = new Point(3, 5, '*');
+                Snake snake = new Snake(p, 4, Direction.RIGHT);
+                snake.Draw();
+
+                Point food = new Point(4, 2, '*');
+                food.Draw();
+                Random rand = new Random();
+                int randomvalueX = rand.Next(5, 115);
+                int randomvalueY = rand.Next(5, 25);
+                while (true)
                 {
-                    Console.WriteLine("Вы проиграли");
-                    Console.ReadKey();
-                    break;
+                    if (snake.SnakeHit() == true)
+                    {
+                        Console.Write("Вы врезались в хвост");
+                        Console.ReadKey();
+                        break;
+                    }
+                    if (walls.IsHit(snake) == true)
+                    {
+                        Console.Write("Вы врезались в стену");
+                        Console.ReadKey();
+                        break;
+                    }
+                    if (snake.Eat(food))
+                    {
+
+                        randomvalueX = rand.Next(5, 115);
+                        randomvalueY = rand.Next(5, 25);
+
+                        food = new Point(randomvalueX, randomvalueY, '*');
+                        food.Draw();
+
+                        Snake.gg++;
+
+                        if (Snake.gg == 10)
+                        {
+                            Console.WriteLine("Вы выиграли");
+                        }
+                    }
+                    else
+                    {
+                        snake.Move();
+                    }
+                    Thread.Sleep(150);
+                    if (Console.KeyAvailable)
+                    {
+                        ConsoleKeyInfo key = Console.ReadKey();
+                        snake.HandleKey(key.Key);
+                    }
                 }
-                snake.Move();
-                Thread.Sleep(100);
             }
         }
     }

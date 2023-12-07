@@ -1,11 +1,10 @@
-﻿using lb7;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lb7
+namespace lb88
 {
     internal class Walls
     {
@@ -15,15 +14,16 @@ namespace lb7
         {
             wallList = new List<Figure>();
 
-            HorizontalLine upLine = new HorizontalLine(0, mapWidth - 2, 0, '+');
-            HorizontalLine downLine = new HorizontalLine(0, mapWidth - 2, mapHeight - 1, '+');
+            HorizontalLine upLine = new HorizontalLine(0, mapWidth - 1, 0, '+');
+            HorizontalLine downLine = new HorizontalLine(0, mapWidth - 1, mapHeight - 1, '+');
             VerticalLine leftLine = new VerticalLine(0, mapHeight - 1, 0, '+');
-            VerticalLine rightLine = new VerticalLine(0, mapHeight - 1, mapWidth - 2, '+');
+            VerticalLine rightLine = new VerticalLine(0, mapHeight - 1, mapWidth - 1, '+');
 
             wallList.Add(upLine);
             wallList.Add(downLine);
             wallList.Add(leftLine);
             wallList.Add(rightLine);
+
         }
 
         public bool IsHit(Figure figure)
