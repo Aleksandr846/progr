@@ -1,11 +1,12 @@
-﻿using System;
+﻿using lb6;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace objects_and_classes
+namespace lb6
 {
     class Point
     {
@@ -99,22 +100,24 @@ namespace objects_and_classes
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Точки - 1 Линии - 2");
-            int bat = Convert.ToInt32(Console.ReadLine());
-            if (bat == 1)
+            Console.WriteLine("\n\n+ Точки – 1 Линии - 2");
+            Walls walls = new Walls(121, 30);
+            walls.Draw();
+            int bruh = Convert.ToInt32(Console.ReadLine());
+            if (bruh == 1)
             {
-                Point a = new Point(5, 5, '*');
+                Point a = new Point(3, 3, '*');
                 a.Draw();
-                Point b = new Point(5, 5, '*');
+                Point b = new Point(3, 5, '*');
                 b.Draw();
                 bool z = a.IsHit(b);
                 if (z == true)
                 {
-                    Console.WriteLine("\nТочки совпадают");
+                    Console.WriteLine("\n+ Точки совпадают");
                 }
                 else
                 {
-                    Console.WriteLine("\nТочки не совпадают");
+                    Console.WriteLine("\n+ Точки не совпадают");
                 }
 
             }
@@ -122,19 +125,19 @@ namespace objects_and_classes
             {
                 HorizontalLine h1 = new HorizontalLine(1, 6, 3, '*');
                 h1.Draw();
-                VerticalLine v1 = new VerticalLine(1, 4, 4, '*');
+                VerticalLine v1 = new VerticalLine(1, 4, 8, '*');
                 v1.Draw();
                 bool x = h1.IsHit(v1);
                 if (x == true)
                 {
-                    Console.WriteLine("\nЛинии пересекаются");
+                    Console.WriteLine("\n+ Линии пересекаются");
                 }
                 else
                 {
-                    Console.WriteLine("\nЛинии не пересекаются");
+                    Console.WriteLine("\n+ Линии не пересекаются");
                 }
             }
-            Console.WriteLine("\nНажмите любую клавишу, чтобы завершить программу...");
+            Console.WriteLine("\n+ Нажмите любую клавишу, чтобы завершить про-грамму...");
             Console.ReadKey();
         }
     }
