@@ -1,69 +1,80 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace llb3
+class Point
 {
-    class Point
+    int x;
+    int y;
+    char sym;
+
+    public Point(int x, int y, char sym)
     {
-        int x;
-        int y;
-        string sym = "-----";
-        public void SetX(int x)
-        {
-            if (x >= 0)
-                this.x = x;
-            else
-                throw new Exception("Значение x не может быть отрицательным");
-        }
-        public void SetY(int y)
-        {
-            if (y >= 0)
-                this.y = y;
-            else
-                throw new Exception("Значение y не может быть отрицательным");
-        }
-        public void Draw(string sym)
-        {
-            Console.SetCursorPosition(x, y);
-            Console.Write(sym);
-            y = y + 1;
-        }
+        this.x = x;
+        this.y = y;
+        this.sym = sym;
     }
-    class Program
+
+    public void Draw()
     {
-        static void Main(string[] args)
+        Console.SetCursorPosition(x, y);
+        Console.Write(sym);
+    }
+}
+
+class Figure
+{
+    protected List<Point> pList;
+
+    public void Draw()
+    {
+        foreach (Point p in pList)
         {
-            Point a = new Point();
-            Console.Write("Введите координату x: ");
-            try
-            {
-                a.SetX(Convert.ToInt32(Console.ReadLine()));
-            }
-            catch (System.Exception)
-            {
-                Console.WriteLine("Значение x не может быть отрицательным");
-                Console.WriteLine("Введите координату x: ");
-                a.SetX(Convert.ToInt32(Console.ReadLine()));
-            }
-            Console.Write("Введите координату y: ");
-            try
-            {
-                a.SetY(Convert.ToInt32(Console.ReadLine()));
-            }
-            catch (System.Exception)
-            {
-                Console.WriteLine("Значение y не может быть отрицательным ");
-                Console.WriteLine("Введите координату y: ");
-                a.SetY(Convert.ToInt32(Console.ReadLine()));
-            }
-            a.Draw("()");
-            a.Draw("||");
-            a.Draw("/\\");
-            Console.WriteLine("\nНажмите любую клавишу, чтобы завершить программу...");
-            Console.ReadKey();
+            p.Draw();
         }
     }
 }
+
+class VerticalLine : Figure
+{
+    public VerticalLine(int yUp, int yDown, int x, char sym)
+    {
+        pList = new List<Point>();
+        for (int y = yUp; y <= yDown; y++)
+        {
+            Point p = new Point(x, y, sym);
+            pList.Add(p);
+        }
+    }
+}
+
+class HorizontalLine : Figure
+{
+    public HorizontalLine(int xLeft, int xRight, int y, char sym)
+    {
+        pList = new List<Point>();
+        for (int x = xLeft; x <= xRight; x++)
+        {
+            Point p = new Point(x, y, sym);
+            pList.Add(p);
+        }
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+{
+    HorizontalLine topLine = new HorizontalLine(1, 10, 1, '*');
+    HorizontalLine bottomLine = new HorizontalLine(1, 10, 5, '*');
+    VerticalLine leftLine = new VerticalLine(1, 5, 1, '*');
+    VerticalLine rightLine = new VerticalLine(1, 5, 10, '*');
+
+    topLine.Draw();
+    bottomLine.Draw();
+    leftLine.Draw();
+    rightLine.Draw();
+
+    Console.ReadKey();
+}
+}
+
