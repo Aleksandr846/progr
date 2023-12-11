@@ -1,0 +1,15 @@
+C:\Users\Aleksandr\source\repos\lbb4\lbb4\obj\Debug\net6.0\lbb4.csproj.AssemblyReference.cache
+C:\Users\Aleksandr\source\repos\lbb4\lbb4\obj\Debug\net6.0\lbb4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aleksandr\source\repos\lbb4\lbb4\obj\Debug\net6.0\lbb4.AssemblyInfoInputs.cache
+C:\Users\Aleksandr\source\repos\lbb4\lbb4\obj\Debug\net6.0\lbb4.AssemblyInfo.cs
+C:\Users\Aleksandr\source\repos\lbb4\lbb4\obj\Debug\net6.0\lbb4.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandr\source\repos\lbb4\lbb4\bin\Debug\net6.0\lbb4.exe
+C:\Users\Aleksandr\source\repos\lbb4\lbb4\bin\Debug\net6.0\lbb4.deps.json
+C:\Users\Aleksandr\source\repos\lbb4\lbb4\bin\Debug\net6.0\lbb4.runtimeconfig.json
+C:\Users\Aleksandr\source\repos\lbb4\lbb4\bin\Debug\net6.0\lbb4.dll
+C:\Users\Aleksandr\source\repos\lbb4\lbb4\bin\Debug\net6.0\ref\lbb4.dll
+C:\Users\Aleksandr\source\repos\lbb4\lbb4\bin\Debug\net6.0\lbb4.pdb
+C:\Users\Aleksandr\source\repos\lbb4\lbb4\obj\Debug\net6.0\lbb4.dll
+C:\Users\Aleksandr\source\repos\lbb4\lbb4\obj\Debug\net6.0\ref\lbb4.dll
+C:\Users\Aleksandr\source\repos\lbb4\lbb4\obj\Debug\net6.0\lbb4.pdb
+C:\Users\Aleksandr\source\repos\lbb4\lbb4\obj\Debug\net6.0\lbb4.genruntimeconfig.cache
