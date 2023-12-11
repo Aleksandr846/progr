@@ -1,0 +1,11 @@
+C:\Users\Aleksandr\source\repos\lb10\lb10\obj\Debug\lb10.csproj.AssemblyReference.cache
+C:\Users\Aleksandr\source\repos\lb10\lb10\obj\Debug\lb10.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aleksandr\source\repos\lb10\lb10\obj\Debug\lb10.Form1.resources
+C:\Users\Aleksandr\source\repos\lb10\lb10\obj\Debug\lb10.Properties.Resources.resources
+C:\Users\Aleksandr\source\repos\lb10\lb10\obj\Debug\lb10.csproj.GenerateResource.cache
+C:\Users\Aleksandr\source\repos\lb10\lb10\obj\Debug\lb10.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandr\source\repos\lb10\lb10\bin\Debug\lb10.exe.config
+C:\Users\Aleksandr\source\repos\lb10\lb10\bin\Debug\lb10.exe
+C:\Users\Aleksandr\source\repos\lb10\lb10\bin\Debug\lb10.pdb
+C:\Users\Aleksandr\source\repos\lb10\lb10\obj\Debug\lb10.exe
+C:\Users\Aleksandr\source\repos\lb10\lb10\obj\Debug\lb10.pdb
