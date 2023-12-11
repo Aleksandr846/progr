@@ -1,0 +1,11 @@
+C:\Users\Aleksandr\source\repos\lb9\lb9\bin\Debug\lb9.exe.config
+C:\Users\Aleksandr\source\repos\lb9\lb9\bin\Debug\lb9.exe
+C:\Users\Aleksandr\source\repos\lb9\lb9\bin\Debug\lb9.pdb
+C:\Users\Aleksandr\source\repos\lb9\lb9\obj\Debug\lb9.csproj.AssemblyReference.cache
+C:\Users\Aleksandr\source\repos\lb9\lb9\obj\Debug\lb9.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aleksandr\source\repos\lb9\lb9\obj\Debug\lb9.Form1.resources
+C:\Users\Aleksandr\source\repos\lb9\lb9\obj\Debug\lb9.Properties.Resources.resources
+C:\Users\Aleksandr\source\repos\lb9\lb9\obj\Debug\lb9.csproj.GenerateResource.cache
+C:\Users\Aleksandr\source\repos\lb9\lb9\obj\Debug\lb9.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandr\source\repos\lb9\lb9\obj\Debug\lb9.exe
+C:\Users\Aleksandr\source\repos\lb9\lb9\obj\Debug\lb9.pdb
