@@ -1,0 +1,15 @@
+C:\Users\Aleksandr\source\repos\lb8\lb8\obj\Debug\net6.0\lb8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aleksandr\source\repos\lb8\lb8\obj\Debug\net6.0\lb8.AssemblyInfoInputs.cache
+C:\Users\Aleksandr\source\repos\lb8\lb8\obj\Debug\net6.0\lb8.AssemblyInfo.cs
+C:\Users\Aleksandr\source\repos\lb8\lb8\obj\Debug\net6.0\lb8.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandr\source\repos\lb8\lb8\bin\Debug\net6.0\lb8.exe
+C:\Users\Aleksandr\source\repos\lb8\lb8\bin\Debug\net6.0\lb8.deps.json
+C:\Users\Aleksandr\source\repos\lb8\lb8\bin\Debug\net6.0\lb8.runtimeconfig.json
+C:\Users\Aleksandr\source\repos\lb8\lb8\bin\Debug\net6.0\lb8.dll
+C:\Users\Aleksandr\source\repos\lb8\lb8\bin\Debug\net6.0\ref\lb8.dll
+C:\Users\Aleksandr\source\repos\lb8\lb8\bin\Debug\net6.0\lb8.pdb
+C:\Users\Aleksandr\source\repos\lb8\lb8\obj\Debug\net6.0\lb8.csproj.AssemblyReference.cache
+C:\Users\Aleksandr\source\repos\lb8\lb8\obj\Debug\net6.0\lb8.dll
+C:\Users\Aleksandr\source\repos\lb8\lb8\obj\Debug\net6.0\ref\lb8.dll
+C:\Users\Aleksandr\source\repos\lb8\lb8\obj\Debug\net6.0\lb8.pdb
+C:\Users\Aleksandr\source\repos\lb8\lb8\obj\Debug\net6.0\lb8.genruntimeconfig.cache
