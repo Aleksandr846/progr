@@ -1,0 +1,11 @@
+C:\Users\Aleksandr\source\repos\kyrss_2\kyrss_2\bin\Debug\kyrss_2.exe.config
+C:\Users\Aleksandr\source\repos\kyrss_2\kyrss_2\bin\Debug\kyrss_2.exe
+C:\Users\Aleksandr\source\repos\kyrss_2\kyrss_2\bin\Debug\kyrss_2.pdb
+C:\Users\Aleksandr\source\repos\kyrss_2\kyrss_2\obj\Debug\kyrss_2.csproj.AssemblyReference.cache
+C:\Users\Aleksandr\source\repos\kyrss_2\kyrss_2\obj\Debug\kyrss_2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aleksandr\source\repos\kyrss_2\kyrss_2\obj\Debug\kyrss_2.Form1.resources
+C:\Users\Aleksandr\source\repos\kyrss_2\kyrss_2\obj\Debug\kyrss_2.Properties.Resources.resources
+C:\Users\Aleksandr\source\repos\kyrss_2\kyrss_2\obj\Debug\kyrss_2.csproj.GenerateResource.cache
+C:\Users\Aleksandr\source\repos\kyrss_2\kyrss_2\obj\Debug\kyrss_2.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandr\source\repos\kyrss_2\kyrss_2\obj\Debug\kyrss_2.exe
+C:\Users\Aleksandr\source\repos\kyrss_2\kyrss_2\obj\Debug\kyrss_2.pdb
