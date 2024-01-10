@@ -1,0 +1,11 @@
+C:\Users\Aleksandr\source\repos\kyrs_1\kyrs_1\bin\Debug\kyrs_1.exe.config
+C:\Users\Aleksandr\source\repos\kyrs_1\kyrs_1\bin\Debug\kyrs_1.exe
+C:\Users\Aleksandr\source\repos\kyrs_1\kyrs_1\bin\Debug\kyrs_1.pdb
+C:\Users\Aleksandr\source\repos\kyrs_1\kyrs_1\obj\Debug\kyrs_1.csproj.AssemblyReference.cache
+C:\Users\Aleksandr\source\repos\kyrs_1\kyrs_1\obj\Debug\kyrs_1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aleksandr\source\repos\kyrs_1\kyrs_1\obj\Debug\kyrs_1.Form1.resources
+C:\Users\Aleksandr\source\repos\kyrs_1\kyrs_1\obj\Debug\kyrs_1.Properties.Resources.resources
+C:\Users\Aleksandr\source\repos\kyrs_1\kyrs_1\obj\Debug\kyrs_1.csproj.GenerateResource.cache
+C:\Users\Aleksandr\source\repos\kyrs_1\kyrs_1\obj\Debug\kyrs_1.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandr\source\repos\kyrs_1\kyrs_1\obj\Debug\kyrs_1.exe
+C:\Users\Aleksandr\source\repos\kyrs_1\kyrs_1\obj\Debug\kyrs_1.pdb
